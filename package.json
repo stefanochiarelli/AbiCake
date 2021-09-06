@@ -1,0 +1,24 @@
+{
+  "name": "abicake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runSass": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanochiarelli/AbiCake.git"
+  },
+  "keywords": [
+    "pateleria",
+    "tortas",
+    "panadería"
+  ],
+  "author": "Stefano Chiarelli, Agustin Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanochiarelli/AbiCake/issues"
+  },
+  "homepage": "https://github.com/stefanochiarelli/AbiCake#readme"
+}
