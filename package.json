@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/stefanochiarelli/AbiCake/issues"
   },
-  "homepage": "https://github.com/stefanochiarelli/AbiCake#readme"
+  "homepage": "https://github.com/stefanochiarelli/AbiCake#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^5.1.1"
+  }
 }
