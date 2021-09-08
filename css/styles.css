@@ -13,8 +13,63 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Assistant", sans-serif;
   margin: 0;
+}
+
+.seccionUno {
+  background-image: url(../../img/01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.seccionUno__opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+.seccionUno__botonContainer {
+  margin-top: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionUno__boton1, .seccionUno__boton3, .seccionUno__boton2 {
+  display: block;
+  width: 86%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  background-color: transparent;
+  border: 1.4px #ffffff solid;
+}
+.seccionUno__boton1 span, .seccionUno__boton3 span, .seccionUno__boton2 span {
+  display: block;
+  font-family: "Assistant", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 610;
+}
+.seccionUno__boton2 p {
+  font-size: 2rem;
+}
+.seccionDos__banner {
+  background-image: url(../../img/Rectangle9.png);
+  background-size: cover;
+  height: 20vh;
+  background-repeat: no-repeat;
+}
+.seccionDos__contenido h2 {
+  font-size: 2.4rem;
+  margin: 2rem;
+}
+.seccionDos__texto {
+  font-size: 1.6rem;
+  margin: 0 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

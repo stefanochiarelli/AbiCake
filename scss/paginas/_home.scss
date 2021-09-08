@@ -1,0 +1,83 @@
+//SECCION 1
+
+.seccionUno {
+    background-image: url(../../img/01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+
+    &__opciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 95vh;
+        
+        
+    }
+
+    &__botonContainer {
+        margin-top: 20rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__boton1 {
+       display: block;
+       width: 86%;
+       padding: 1rem 0;
+       margin: 1rem 0;
+       background-color: transparent;
+       border: 1.4px $color-blanco solid;
+
+       span {
+           display: block;
+           font-family: 'Assistant', sans-serif;
+           color: $color-blanco;
+           text-align: center;
+           text-transform: uppercase;
+           font-size: 2.3rem;
+           font-weight: 610;
+       }
+       
+
+    }
+
+    &__boton2 {
+        @extend .seccionUno__boton1;
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    &__boton3 {
+        @extend .seccionUno__boton1;
+    }
+}
+
+//SECCION 2
+
+.seccionDos {
+
+    &__banner {
+        background-image: url(../../img/Rectangle9.png);
+        background-size: cover;
+        height: 20vh;
+        background-repeat: no-repeat;
+    }
+
+    &__contenido {
+        h2 {
+            font-size: 2.4rem;
+            margin: 2rem;
+        }
+    }
+
+    &__texto {
+        font-size: 1.6rem;
+        margin: 0 2rem;
+    }
+
+}
