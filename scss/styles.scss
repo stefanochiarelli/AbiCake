@@ -1,5 +1,23 @@
+
+//Importando Bootstrap
+// 1. Hay que incluir las funciones
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Aca Irian nuestras variables para pisar las variables de bootstrap
+
+// 3. Mixins y variables de bootstrap
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Acá van los componentes de Bstrap que queramos poner
+
+@import "../node_modules/bootstrap/scss/accordion";
+
+
+//proyecto
 @import "base/normalize";
 @import "abstractos/variables";
 @import "base/tipografía";
 @import "paginas/home";
+@import "layout/responsive";
 

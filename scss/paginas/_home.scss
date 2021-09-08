@@ -69,15 +69,79 @@
     }
 
     &__contenido {
+        
         h2 {
             font-size: 2.4rem;
-            margin: 2rem;
+            margin: 3.5rem 2rem;
         }
     }
 
     &__texto {
         font-size: 1.6rem;
+        font-weight: 300;
         margin: 0 2rem;
     }
 
+}
+
+//Sección Tres
+
+.seccionTres {
+    height: 80vh;
+
+    .accordion-header {
+        
+    }
+
+
+    &__accordion1 {
+        
+        button {
+            background-color: $color-rosa;
+            font-family: 'Assistant', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+
+            &:focus {
+                color: $color-black;
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+
+    &__accordion2 {
+        @extend .seccionTres__accordion1;
+        button {
+            background-color: $color-beige;
+        }
+    }
+    &__accordion3 {
+        @extend .seccionTres__accordion1;
+        button {
+            background-color: $color-lila;
+            color: $color-blanco;
+
+            &:focus {
+                color: $color-blanco;
+                background-color: $color-violeta;
+            }
+        }
+    }
+
+}
+
+
+
+//Objetos invisibles (transisción a version desktop)
+
+.seccionDos__nuevaCosa {
+    visibility: hidden;
+}
+.collapse {
+    display: none;
+}
+.show {
+    display: inline-block;
+    transition: .5s;
 }
