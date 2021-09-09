@@ -182,9 +182,6 @@ body {
   margin: 0 2rem;
 }
 
-.seccionTres {
-  height: 80vh;
-}
 .seccionTres__accordion1 button, .seccionTres__accordion3 button, .seccionTres__accordion2 button {
   background-color: #F7A9D4;
   font-family: "Assistant", sans-serif;
@@ -208,16 +205,90 @@ body {
   background-color: #3D455A;
 }
 
+.accordion-body {
+  padding: 0;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 24px;
+}
+.titulo--footer {
+  color: #ffffff;
+  line-height: 31px;
+}
+.titulo--pasos {
+  color: #3D455A;
+  line-height: 31.39px;
+  margin-bottom: 41px;
+}
+
+.pedidos {
+  padding: 38px 20px 43px;
+}
+
+.pedidos__pasos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+}
+.pedidos__pasos--margen {
+  margin-left: 89px;
+}
+
+.pedidos__img {
+  width: 69px;
+  height: 69px;
+}
+
+.pedidos__texto {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D455A;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pedidos {
+    padding: 125px;
+  }
+
+  .pedidos__pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+  }
+
+  .pedidos__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 680px;
+    margin: auto;
+  }
+
+  .pedidos__img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .pedidos__texto {
+    margin: 0;
+  }
+
+  .titulo--pasos {
+    color: #3D455A;
+    line-height: 31.39px;
+    margin-bottom: 47px;
+  }
+}
 #footer {
   background-color: #3D455A;
   padding: 47px 20px 100px 20px;
-}
-
-.footer__titulo {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 31px;
-  color: #ffffff;
 }
 
 .footer__contacto {
@@ -262,6 +333,51 @@ body {
   padding: 8px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .container-d {
+    width: 831px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  #footer {
+    background-color: #76789E;
+    padding: 113px 0 101px;
+  }
+
+  .footer__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 86px;
+  }
+
+  .footer__contacto {
+    width: 320px;
+    margin: 0;
+  }
+  .footer__contacto--whatsapp img {
+    margin-bottom: 36px;
+  }
+  .footer__contacto--email img {
+    margin-bottom: 36px;
+  }
+  .footer__contacto span {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .solo-movil {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .solo-desk {
+    display: none;
+  }
+}
 .seccionDos__nuevaCosa {
   visibility: hidden;
 }

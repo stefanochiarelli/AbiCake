@@ -80,8 +80,6 @@
 //Sección Tres
 
 .seccionTres {
-  height: 80vh;
-
   .accordion-header {
   }
 
@@ -120,17 +118,88 @@
   }
 }
 
+// INICIO COMO FUNCIONA
+.accordion-body {
+  padding: 0;
+}
+.titulo {
+  font-weight: 700;
+  font-size: 24px;
+  &--footer {
+    color: $color-blanco;
+    line-height: 31px;
+  }
+  &--pasos {
+    color: $color-violeta;
+    line-height: 31.39px;
+    margin-bottom: 41px;
+  }
+}
+.pedidos {
+  padding: 38px 20px 43px;
+}
+.pedidos__pasos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+  &--margen {
+    margin-left: 89px;
+  }
+}
+.pedidos__img {
+  width: 69px;
+  height: 69px;
+}
+.pedidos__texto {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-violeta;
+  margin-left: 20px;
+}
+
+// Desk Cómo funciona
+@media screen and (min-width: 1200px) {
+  .pedidos {
+    padding: 125px;
+  }
+  .pedidos__pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+  }
+  .pedidos__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 680px;
+    margin: auto;
+  }
+  .pedidos__img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  .pedidos__texto {
+    margin: 0;
+  }
+  .titulo {
+    &--pasos {
+      color: $color-violeta;
+      line-height: 31.39px;
+      margin-bottom: 47px;
+    }
+  }
+}
+
+// FIN COMO FUNCIONA
+
 // INICIO FOOTER
 #footer {
   background-color: $color-violeta;
   padding: 47px 20px 100px 20px;
-}
-
-.footer__titulo {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 31px;
-  color: $color-blanco;
 }
 
 .footer__contacto {
@@ -179,10 +248,57 @@
   }
 }
 
+// Desk Footer
+@media screen and (min-width: 1200px) {
+  .container-d {
+    width: 831px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+  #footer {
+    background-color: $color-lila;
+    padding: 113px 0 101px;
+  }
+  .footer__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 86px;
+  }
+  .footer__contacto {
+    width: 320px;
+    margin: 0;
+    &--whatsapp {
+      & img {
+        margin-bottom: 36px;
+      }
+    }
+    &--email {
+      & img {
+        margin-bottom: 36px;
+      }
+    }
+    & span {
+      margin-bottom: 24px;
+    }
+  }
+}
 // FIN FOOTER
 
+// Contenedor para desk
+@media screen and (min-width: 1200px) {
+  .solo-movil {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .solo-desk {
+    display: none;
+  }
+}
 //Objetos invisibles (transisción a version desktop)
-
 .seccionDos__nuevaCosa {
   visibility: hidden;
 }
