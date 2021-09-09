@@ -208,6 +208,60 @@ body {
   background-color: #3D455A;
 }
 
+#footer {
+  background-color: #3D455A;
+  padding: 47px 20px 100px 20px;
+}
+
+.footer__titulo {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.footer__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contacto--whatsapp {
+  margin: 45px 0 77px;
+}
+.footer__contacto--whatsapp img {
+  width: 65px;
+  height: 66px;
+  margin-bottom: 46px;
+}
+.footer__contacto--email img {
+  width: 96px;
+  height: 66px;
+  margin-bottom: 36px;
+}
+.footer__contacto span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.footer__contacto button {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  font-family: Assistant;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 0;
+}
+
 .seccionDos__nuevaCosa {
   visibility: hidden;
 }
