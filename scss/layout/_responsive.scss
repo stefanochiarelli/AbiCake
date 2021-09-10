@@ -1,6 +1,47 @@
-// @media (min-width: 1100px) {
+@media (min-width: 1100px) {
 
-//     .seccionDos__nuevaCosa {
-//         visibility: visible;
-//     }
-// }
+    .abiHeader {
+        display: block;
+    }
+
+    .navbarDesk {
+        display: inline-block;
+       
+    }
+
+    .seccionUnoEsc {
+        display: block;
+        height: 35vh;
+    }
+
+    .seccionUno {
+        height: 45rem;
+        background-image: url(../../img/fondoDesk.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &__opciones {
+            height: 45rem;
+        }
+
+
+        &__botonContainer {
+            margin: 0;
+            width: 30%;
+        }
+
+        &__logo {
+            display: none;
+            
+        }
+    }
+
+    //Sección Dos
+    .seccionDos {
+        display: none;
+    }
+
+    .seccionDosDesk {
+        display: block;
+    }
+}

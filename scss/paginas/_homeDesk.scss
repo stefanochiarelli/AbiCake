@@ -1,0 +1,54 @@
+.abiHeader {
+    display: none;
+
+    &__redes{
+        margin-top: 2.6rem;
+        svg {
+            margin-right: .8rem;
+        }
+    }
+}
+
+.navbarDesk {
+    height: 7vh;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin-left: 1.5rem;
+
+        li{
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-right: 4rem;
+            font-weight: 300;
+
+            &:hover {
+                cursor: pointer;
+                font-weight: 800;
+                padding-bottom: 4px;
+                border-bottom: $color-beige solid 4px;
+            }
+
+        }
+    }
+
+}
+
+//Sección 1
+.seccionUnoEsc {
+    display: none;
+
+    &__logo {
+        text-align: center;
+        width: 90%;
+    }
+
+    
+}
+
+//Sección 2
+
+.seccionDosDesk {
+    height: 100vh;
+}

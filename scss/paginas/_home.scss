@@ -1,5 +1,9 @@
 //SECCION 1
 
+.navbarDesk {
+    display: none;
+}
+
 .seccionUno {
     background-image: url(../../img/01.png);
     background-size: cover;
@@ -32,6 +36,14 @@
        background-color: transparent;
        border: 1.4px $color-blanco solid;
 
+       &:hover {
+           cursor: pointer;
+           background-color: $color-blanco;
+           span {
+                color: $color-rosa;
+           }
+       }
+
        span {
            display: block;
            font-family: 'Assistant', sans-serif;
@@ -58,6 +70,10 @@
 }
 
 //SECCION 2
+
+.seccionDosDesk {
+    display: none;
+}
 
 .seccionDos {
 
@@ -89,9 +105,7 @@
 .seccionTres {
     height: 80vh;
 
-    .accordion-header {
-        
-    }
+    
 
 
     &__accordion1 {
@@ -106,6 +120,10 @@
                 color: $color-black;
                 box-shadow: none;
                 border: none;
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
@@ -130,6 +148,9 @@
     }
 
 }
+
+
+
 
 
 
