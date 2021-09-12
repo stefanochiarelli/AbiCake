@@ -148,6 +148,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 150px;
+    &--margen {
+      margin-left: 0px;
+    }
   }
   .pedidos__contenido {
     display: flex;

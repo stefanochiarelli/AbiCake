@@ -14,11 +14,11 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
             <button
-              class="accordion-button accordion-button--tortas"
+              class="accordion-button collapsed accordion-button--tortas"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
               Tortas
@@ -26,7 +26,7 @@
           </h2>
           <div
             id="flush-collapseOne"
-            class="accordion-collapse collapse show"
+            class="accordion-collapse collapse"
             aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushAbi"
           >
@@ -103,53 +103,19 @@
             data-bs-parent="#accordionFlushAbi"
           >
             <div class="accordion-body">
-              <div class="pedidos solo-movil">
-                <h2 class="titulo titulo--pasos">Cómo Funciona</h2>
-
-                <div class="pedidos__pasos">
-                  <img
-                    class="pedidos__img"
-                    src="img/CONTACTO.svg"
-                    alt="contacto"
-                  />
-                  <p class="pedidos__texto">
-                    Encargo del pedido por cualquiera de nuestros medios de
-                    contacto.
-                  </p>
-                </div>
-                <div class="pedidos__pasos pedidos__pasos--margen">
-                  <img class="pedidos__img" src="img/PAGO.svg" alt="pago" />
-                  <p class="pedidos__texto">Se ejecuta el pago del encargo.</p>
-                </div>
-                <div class="pedidos__pasos">
-                  <img
-                    class="pedidos__img"
-                    src="img/PREPARACION.svg"
-                    alt="preparacion"
-                  />
-                  <p class="pedidos__texto">
-                    La preparación es de entre X-Y días.
-                  </p>
-                </div>
-                <div class="pedidos__pasos pedidos__pasos--margen">
-                  <img
-                    class="pedidos__img"
-                    src="img/DELIVERY.svg"
-                    alt="delivery"
-                  />
-                  <p class="pedidos__texto">
-                    Se puede retirar en nuestro domicilio o se pueden hacer
-                    envíos.
-                  </p>
-                </div>
-              </div>
+              <p class="acordeon-texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                at dolor id nisl dapibus vulputate. Pellentesque in purus quis
+                mauris auctor laoreet sed feugiat est
+              </p>
+              <img src="img/caja-felizdia.png" alt="caja regalo" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="container-fluid pedidos solo-desk">
+    <div class="container-fluid pedidos">
       <div class="container-d">
         <h2 class="titulo titulo--pasos">Cómo Funciona</h2>
         <div class="pedidos__contenido">
@@ -159,7 +125,7 @@
               Encargo del pedido por cualquiera de nuestros medios de contacto.
             </p>
           </div>
-          <div class="pedidos__pasos">
+          <div class="pedidos__pasos pedidos__pasos--margen">
             <img class="pedidos__img" src="img/PAGO.svg" alt="pago" />
             <p class="pedidos__texto">Se ejecuta el pago del encargo.</p>
           </div>
@@ -171,7 +137,7 @@
             />
             <p class="pedidos__texto">La preparación es de entre X-Y días.</p>
           </div>
-          <div class="pedidos__pasos">
+          <div class="pedidos__pasos pedidos__pasos--margen">
             <img class="pedidos__img" src="img/DELIVERY.svg" alt="delivery" />
             <p class="pedidos__texto">
               Se puede retirar en nuestro domicilio o se pueden hacer envíos.

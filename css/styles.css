@@ -264,6 +264,9 @@ body {
     align-items: flex-start;
     width: 150px;
   }
+  .pedidos__pasos--margen {
+    margin-left: 0px;
+  }
 
   .pedidos__contenido {
     display: flex;
