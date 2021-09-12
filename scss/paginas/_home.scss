@@ -1,140 +1,119 @@
-//SECCION 1
-
-.seccionUno {
-  background-image: url(../../img/01.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 85vh;
-
-  &__opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 95vh;
-  }
-
-  &__botonContainer {
-    margin-top: 20rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__boton1 {
-    display: block;
-    width: 86%;
-    padding: 1rem 0;
-    margin: 1rem 0;
-    background-color: transparent;
-    border: 1.4px $color-blanco solid;
-
-    span {
-      display: block;
-      font-family: "Assistant", sans-serif;
-      color: $color-blanco;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 2.3rem;
-      font-weight: 610;
-    }
-  }
-
-  &__boton2 {
-    @extend .seccionUno__boton1;
-    p {
-      font-size: 2rem;
-    }
-  }
-
-  &__boton3 {
-    @extend .seccionUno__boton1;
-  }
-}
-
-//SECCION 2
-
-.seccionDos {
-  &__banner {
-    background-image: url(../../img/Rectangle9.png);
-    background-size: cover;
-    height: 20vh;
-    background-repeat: no-repeat;
-  }
-
-  &__contenido {
-    h2 {
-      font-size: 2.4rem;
-      margin: 3.5rem 2rem;
-    }
-  }
-
-  &__texto {
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin: 0 2rem;
-  }
-}
-
-//Sección Tres
-
-.seccionTres {
-  .accordion-header {
-  }
-
-  &__accordion1 {
-    button {
-      background-color: $color-rosa;
-      font-family: "Assistant", sans-serif;
-      font-size: 2.4rem;
-      font-weight: 700;
-
-      &:focus {
-        color: $color-black;
-        box-shadow: none;
-        border: none;
-      }
-    }
-  }
-
-  &__accordion2 {
-    @extend .seccionTres__accordion1;
-    button {
-      background-color: $color-beige;
-    }
-  }
-  &__accordion3 {
-    @extend .seccionTres__accordion1;
-    button {
-      background-color: $color-lila;
-      color: $color-blanco;
-
-      &:focus {
-        color: $color-blanco;
-        background-color: $color-violeta;
-      }
-    }
-  }
-}
-
-// INICIO COMO FUNCIONA
-.accordion-body {
-  padding: 0;
-}
+// REUTILIZABLES
 .titulo {
   font-weight: 700;
   font-size: 24px;
+  line-height: 31px;
   &--footer {
     color: $color-blanco;
-    line-height: 31px;
   }
   &--pasos {
     color: $color-violeta;
-    line-height: 31.39px;
     margin-bottom: 41px;
   }
+  // &--acordeon__tortas {
+  //   color: $color-violeta;
+  // }
+  // &--acordeon__desayunos {
+  //   color: $color-violeta;
+  // }
+  // &--acrodeon__cajas {
+  //   color: $color-blanco;
+  // }
 }
+// INCIO ACORDEÓN
+.accordion-body {
+  padding: 0;
+}
+
+.collapse {
+  display: none;
+}
+.show {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.accordion-button::after {
+  background: url("../img/flecha-acordeon2.svg");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("../img/flecha-acordeon2.svg");
+  transform: rotate(-180deg);
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-button {
+  font-family: "Assistant", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 11px 40px 11px 20px;
+
+  &:not(.collapsed) {
+    box-shadow: inherit;
+  }
+
+  &:focus {
+    color: $color-violeta;
+    box-shadow: none;
+    border: none;
+  }
+  &--tortas {
+    background-color: $color-rosa;
+    color: $color-violeta;
+    &:not(.collapsed) {
+      background-color: $color-rosa;
+      color: $color-violeta;
+    }
+  }
+
+  &--desayunos {
+    background-color: $color-beige;
+    color: $color-violeta;
+    &:not(.collapsed) {
+      background-color: $color-beige;
+      color: $color-violeta;
+    }
+  }
+  &--cajas {
+    background-color: $color-lila;
+    color: $color-blanco;
+    &:not(.collapsed) {
+      background-color: $color-lila;
+      color: $color-blanco;
+    }
+  }
+}
+
+.acordeon-texto {
+  padding: 35px 25px 23px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-violeta;
+}
+
+.acordeon-img {
+  display: flex;
+  flex-direction: column;
+  & img {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.accordion-item {
+  border: 0;
+}
+
+// FIN ACORDEÓN
+
+// INICIO COMO FUNCIONA
+
 .pedidos {
   padding: 38px 20px 43px;
 }
@@ -245,6 +224,13 @@
     text-align: center;
     color: $color-blanco;
     padding: 8px 0;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  & a {
+    width: 100%;
   }
 }
 
@@ -297,15 +283,4 @@
   .solo-desk {
     display: none;
   }
-}
-//Objetos invisibles (transisción a version desktop)
-.seccionDos__nuevaCosa {
-  visibility: hidden;
-}
-.collapse {
-  display: none;
-}
-.show {
-  display: inline-block;
-  transition: 0.5s;
 }

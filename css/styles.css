@@ -126,101 +126,104 @@ body {
   margin: 0;
 }
 
-.seccionUno {
-  background-image: url(../../img/01.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 85vh;
-}
-.seccionUno__opciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 95vh;
-}
-.seccionUno__botonContainer {
-  margin-top: 20rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.seccionUno__boton1, .seccionUno__boton3, .seccionUno__boton2 {
-  display: block;
-  width: 86%;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  background-color: transparent;
-  border: 1.4px #ffffff solid;
-}
-.seccionUno__boton1 span, .seccionUno__boton3 span, .seccionUno__boton2 span {
-  display: block;
-  font-family: "Assistant", sans-serif;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.3rem;
-  font-weight: 610;
-}
-.seccionUno__boton2 p {
-  font-size: 2rem;
-}
-.seccionDos__banner {
-  background-image: url(../../img/Rectangle9.png);
-  background-size: cover;
-  height: 20vh;
-  background-repeat: no-repeat;
-}
-.seccionDos__contenido h2 {
-  font-size: 2.4rem;
-  margin: 3.5rem 2rem;
-}
-.seccionDos__texto {
-  font-size: 1.6rem;
-  font-weight: 300;
-  margin: 0 2rem;
-}
-
-.seccionTres__accordion1 button, .seccionTres__accordion3 button, .seccionTres__accordion2 button {
-  background-color: #F7A9D4;
-  font-family: "Assistant", sans-serif;
-  font-size: 2.4rem;
+.titulo {
   font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
 }
-.seccionTres__accordion1 button:focus, .seccionTres__accordion3 button:focus, .seccionTres__accordion2 button:focus {
-  color: #000000;
-  box-shadow: none;
-  border: none;
-}
-.seccionTres__accordion2 button {
-  background-color: #CEC4A5;
-}
-.seccionTres__accordion3 button {
-  background-color: #76789E;
+.titulo--footer {
   color: #ffffff;
 }
-.seccionTres__accordion3 button:focus {
-  color: #ffffff;
-  background-color: #3D455A;
+.titulo--pasos {
+  color: #3D455A;
+  margin-bottom: 41px;
 }
 
 .accordion-body {
   padding: 0;
 }
 
-.titulo {
-  font-weight: 700;
+.collapse {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.accordion-button::after {
+  background: url("../img/flecha-acordeon2.svg");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("../img/flecha-acordeon2.svg");
+  transform: rotate(-180deg);
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-button {
+  font-family: "Assistant", sans-serif;
   font-size: 24px;
+  font-weight: 700;
+  padding: 11px 40px 11px 20px;
 }
-.titulo--footer {
-  color: #ffffff;
-  line-height: 31px;
+.accordion-button:not(.collapsed) {
+  box-shadow: inherit;
 }
-.titulo--pasos {
+.accordion-button:focus {
   color: #3D455A;
-  line-height: 31.39px;
-  margin-bottom: 41px;
+  box-shadow: none;
+  border: none;
+}
+.accordion-button--tortas {
+  background-color: #F7A9D4;
+  color: #3D455A;
+}
+.accordion-button--tortas:not(.collapsed) {
+  background-color: #F7A9D4;
+  color: #3D455A;
+}
+.accordion-button--desayunos {
+  background-color: #CEC4A5;
+  color: #3D455A;
+}
+.accordion-button--desayunos:not(.collapsed) {
+  background-color: #CEC4A5;
+  color: #3D455A;
+}
+.accordion-button--cajas {
+  background-color: #76789E;
+  color: #ffffff;
+}
+.accordion-button--cajas:not(.collapsed) {
+  background-color: #76789E;
+  color: #ffffff;
+}
+
+.acordeon-texto {
+  padding: 35px 25px 23px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D455A;
+}
+
+.acordeon-img {
+  display: flex;
+  flex-direction: column;
+}
+.acordeon-img img {
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.accordion-item {
+  border: 0;
 }
 
 .pedidos {
@@ -331,6 +334,13 @@ body {
   text-align: center;
   color: #ffffff;
   padding: 8px 0;
+  cursor: pointer;
+}
+.footer__contacto button:hover {
+  opacity: 0.75;
+}
+.footer__contacto a {
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -377,18 +387,6 @@ body {
   .solo-desk {
     display: none;
   }
-}
-.seccionDos__nuevaCosa {
-  visibility: hidden;
-}
-
-.collapse {
-  display: none;
-}
-
-.show {
-  display: inline-block;
-  transition: 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */
