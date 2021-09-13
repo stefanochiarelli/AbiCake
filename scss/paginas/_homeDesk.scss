@@ -10,7 +10,11 @@
 }
 
 .navbarDesk {
+    position: fixed;
+    // background-color: $color-blanco;
+    z-index: 3;
     height: 7vh;
+    
 
     ul {
         list-style-type: none;

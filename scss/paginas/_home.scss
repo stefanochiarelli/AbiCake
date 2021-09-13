@@ -102,9 +102,16 @@
 
 //Sección Tres
 
+
+
 .seccionTres {
    
-
+    .accordion-button {
+        &:not(.collapsed){
+            color: $color-black !important;
+            background-color: rgba($color: $color-lila , $alpha: 0.5) !important; 
+        }
+    }
     
 
 
@@ -117,9 +124,11 @@
             font-family: 'Assistant', sans-serif;
             font-size: 2.4rem;
             font-weight: 700;
+            
 
             &:focus {
                 color: $color-black;
+                background-color: none;
                 box-shadow: none;
                 border: none;
             }
@@ -161,7 +170,7 @@
 
             &:focus {
                 color: $color-blanco;
-                background-color: $color-violeta;
+                background-color: $color-lila;
             }
         }
     }
