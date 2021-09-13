@@ -1415,6 +1415,29 @@ body {
   box-sizing: border-box;
   font-family: "Assistant", sans-serif;
   margin: 0;
+  overflow-x: hidden;
+}
+
+.active {
+  display: block;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.titulo--footer {
+  color: #ffffff;
+}
+.titulo--pasos {
+  color: #3D455A;
+  margin-bottom: 41px;
+}
+
+.btn {
+  padding: 2rem;
+  border: none;
 }
 
 .navbarDesk {
@@ -1488,9 +1511,6 @@ body {
   margin: 0 2rem;
 }
 
-.seccionTres {
-  height: 80vh;
-}
 .seccionTres__accordion1 button, .seccionTres__accordion3 button, .seccionTres__accordion2 button {
   background-color: #F7A9D4;
   font-family: "Assistant", sans-serif;
@@ -1505,6 +1525,20 @@ body {
 .seccionTres__accordion1 button:hover, .seccionTres__accordion3 button:hover, .seccionTres__accordion2 button:hover {
   cursor: pointer;
 }
+.seccionTres__accordion1 .acordeon-texto, .seccionTres__accordion3 .acordeon-texto, .seccionTres__accordion2 .acordeon-texto {
+  padding: 35px 25px 23px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D455A;
+}
+.seccionTres__accordion1 .acordeon-img, .seccionTres__accordion3 .acordeon-img, .seccionTres__accordion2 .acordeon-img {
+  display: flex;
+  flex-direction: column;
+}
+.seccionTres__accordion1 .acordeon-img img, .seccionTres__accordion3 .acordeon-img img, .seccionTres__accordion2 .acordeon-img img {
+  width: 100%;
+  margin-bottom: 23px;
+}
 .seccionTres__accordion2 button {
   background-color: #CEC4A5;
 }
@@ -1517,6 +1551,87 @@ body {
   background-color: #3D455A;
 }
 
+.pedidos {
+  padding: 38px 20px 43px;
+}
+
+.pedidos__pasos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+}
+.pedidos__pasos--margen {
+  margin-left: 89px;
+}
+
+.pedidos__img {
+  width: 69px;
+  height: 69px;
+}
+
+.pedidos__texto {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3D455A;
+  margin-left: 20px;
+}
+
+#footer {
+  background-color: #3D455A;
+  padding: 47px 20px 100px 20px;
+}
+
+.footer__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contacto--whatsapp {
+  margin: 45px 0 77px;
+}
+.footer__contacto--whatsapp img {
+  width: 65px;
+  height: 66px;
+  margin-bottom: 46px;
+}
+.footer__contacto--email img {
+  width: 96px;
+  height: 66px;
+  margin-bottom: 36px;
+}
+.footer__contacto span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.footer__contacto button {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  font-family: Assistant;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.footer__contacto button:hover {
+  opacity: 0.75;
+}
+.footer__contacto a {
+  width: 100%;
+}
+
 .seccionDos__nuevaCosa {
   visibility: hidden;
 }
@@ -1526,8 +1641,16 @@ body {
 }
 
 .show {
-  display: inline-block;
-  transition: 0.5s;
+  display: block;
+}
+
+.soy80vh {
+  height: 80vh;
+}
+
+button[disabled] {
+  background-color: rgba(118, 120, 158, 0.4);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .abiHeader {
@@ -1569,10 +1692,134 @@ body {
   width: 90%;
 }
 
-.seccionDosDesk {
-  height: 100vh;
+.bckgWrapper {
+  background-image: url(../../img/bgDesk.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.seccionDosDesk {
+  height: 90vh;
+  margin-top: 12rem;
+}
+.seccionDosDesk__banners .bannerWrapper {
+  position: relative;
+}
+.seccionDosDesk__banners .bannerWrapper img {
+  max-width: 80%;
+}
+.seccionDosDesk__banner1 {
+  margin: 3rem 0 0 2rem;
+  position: absolute;
+  z-index: 2;
+  left: 3rem;
+}
+.seccionDosDesk__banner2 {
+  position: absolute;
+  top: 5rem;
+  left: -2rem;
+}
+.seccionDosDesk__contenido {
+  margin-left: 2rem;
+  border-left: #F7A9D4 2px solid;
+}
+.seccionDosDesk__texto {
+  margin-left: 2rem;
+  margin-right: 30%;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.seccionDosDesk h2 {
+  font-size: 2.4rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.seccionTresDesk {
+  display: none;
+  height: 80vh;
+}
+.seccionTresDesk__buttonWrap {
+  display: flex;
+  flex-direction: column;
+}
+.seccionTresDesk__buttonWrap button {
+  font-family: "Assistant", sans-serif;
+  width: 80%;
+  font-size: 2.4rem;
+  margin: 0.5rem;
+  margin-left: 5rem;
+  padding: 0.5rem 0;
+  background-color: transparent;
+}
+.seccionTresDesk__buttonWrap button:hover {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #F7A9D4;
+}
+.seccionTresDesk__buttonWrap button:focus {
+  background-color: #F7A9D4;
+  font-weight: bold;
+}
+.seccionTresDesk__buttonWrap .buttonWrap__button1 {
+  padding-right: 7rem;
+}
+.seccionTresDesk__buttonWrap .buttonWrap__button2 {
+  padding-left: 5rem;
+}
+.seccionTresDesk__buttonWrap .buttonWrap__button3 {
+  padding-right: 8rem;
+}
+.seccionTresDesk__mostreoTortas, .seccionTresDesk__mostreoCajas, .seccionTresDesk__mostreoDesayunos {
+  display: none;
+}
+.seccionTresDesk__mostreoTortas p, .seccionTresDesk__mostreoCajas p, .seccionTresDesk__mostreoDesayunos p {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  margin-bottom: 10rem;
+}
+.seccionTresDesk__mostreoTortas img, .seccionTresDesk__mostreoCajas img, .seccionTresDesk__mostreoDesayunos img {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.seccionTresDesk__mostreoDesayunos {
+  display: none;
+}
+.seccionTresDesk__mostreoDesayunos p {
+  margin-bottom: 8rem;
+}
+.seccionTresDesk__mostreoDesayunos img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.seccionTresDesk__mostreoCajas {
+  display: none;
+}
+.seccionTresDesk__mostreoCajas p {
+  margin-bottom: 8rem;
+}
+.seccionTresDesk__mostreoCajas img {
+  width: 100%;
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .seccionDosDesk {
+    height: 70vh;
+  }
+  .seccionDosDesk__texto {
+    font-size: 1.3rem;
+    margin-right: 20%;
+  }
+
+  .seccionTresDesk__buttonWrap button {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .bckgWrapper {
+    background-image: none;
+  }
+}
 @media (min-width: 1100px) {
   .abiHeader {
     display: block;
@@ -1610,6 +1857,98 @@ body {
 
   .seccionDosDesk {
     display: block;
+  }
+
+  .seccionTres {
+    display: none;
+  }
+
+  .seccionTresDesk {
+    display: block;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .pedidos {
+    padding: 125px;
+  }
+
+  .pedidos__pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+  }
+  .pedidos__pasos--margen {
+    margin-left: 0px;
+  }
+
+  .pedidos__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 680px;
+    margin: auto;
+  }
+
+  .pedidos__img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .pedidos__texto {
+    margin: 0;
+  }
+
+  .titulo--pasos {
+    color: #3D455A;
+    line-height: 31.39px;
+    margin-bottom: 47px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-d {
+    width: 831px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  #footer {
+    background-color: #76789E;
+    padding: 113px 0 101px;
+  }
+
+  .footer__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 86px;
+  }
+
+  .footer__contacto {
+    width: 320px;
+    margin: 0;
+  }
+  .footer__contacto--whatsapp img {
+    margin-bottom: 36px;
+  }
+  .footer__contacto--email img {
+    margin-bottom: 36px;
+  }
+  .footer__contacto span {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .solo-movil {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .solo-desk {
+    display: none;
   }
 }
 

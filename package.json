@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/stefanochiarelli/AbiCake/issues"
   },
-  "homepage": "https://github.com/stefanochiarelli/AbiCake#readme"
+  "homepage": "https://github.com/stefanochiarelli/AbiCake#readme",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  }
 }

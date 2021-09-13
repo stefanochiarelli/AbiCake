@@ -1,0 +1,25 @@
+.active {
+    display: block;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    &--footer {
+      color: $color-blanco;
+    }
+    &--pasos {
+      color: $color-violeta;
+      margin-bottom: 41px;
+    }
+    // &--acordeon__tortas {
+    //   color: $color-violeta;
+    // }
+    // &--acordeon__desayunos {
+    //   color: $color-violeta;
+    // }
+    // &--acrodeon__cajas {
+    //   color: $color-blanco;
+    // }
+  }

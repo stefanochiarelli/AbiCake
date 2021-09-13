@@ -103,13 +103,15 @@
 //Sección Tres
 
 .seccionTres {
-    height: 80vh;
+   
 
     
 
 
     &__accordion1 {
         
+        
+
         button {
             background-color: $color-rosa;
             font-family: 'Assistant', sans-serif;
@@ -126,6 +128,22 @@
                 cursor: pointer;
             }
         }
+
+        .acordeon-texto {
+            padding: 35px 25px 23px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-violeta;
+        }
+
+        .acordeon-img {
+            display: flex;
+            flex-direction: column;
+            & img {
+              width: 100%;
+              margin-bottom: 23px;
+            }
+        }
     }
 
     &__accordion2 {
@@ -134,6 +152,7 @@
             background-color: $color-beige;
         }
     }
+
     &__accordion3 {
         @extend .seccionTres__accordion1;
         button {
@@ -149,6 +168,98 @@
 
 }
 
+//Seccion 4
+
+// INICIO COMO FUNCIONA
+
+.pedidos {
+    padding: 38px 20px 43px;
+  }
+  .pedidos__pasos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+    &--margen {
+      margin-left: 89px;
+    }
+  }
+  .pedidos__img {
+    width: 69px;
+    height: 69px;
+  }
+  .pedidos__texto {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-violeta;
+    margin-left: 20px;
+  }
+  
+ 
+  
+  // FIN COMO FUNCIONA
+  
+// INICIO FOOTER
+#footer {
+    background-color: $color-violeta;
+    padding: 47px 20px 100px 20px;
+  }
+  
+  .footer__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    &--whatsapp {
+      margin: 45px 0 77px;
+      & img {
+        width: 65px;
+        height: 66px;
+        margin-bottom: 46px;
+      }
+    }
+    &--email {
+      & img {
+        width: 96px;
+        height: 66px;
+        margin-bottom: 36px;
+      }
+    }
+  
+    & span {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: $color-blanco;
+      margin-bottom: 25px;
+    }
+    & button {
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: transparent;
+      font-family: Assistant;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      color: $color-blanco;
+      padding: 8px 0;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+    & a {
+      width: 100%;
+    }
+  }
+
+  //Fin footer
 
 
 
@@ -163,6 +274,17 @@
     display: none;
 }
 .show {
-    display: inline-block;
-    transition: .5s;
+    display: block;
+    
+
 }
+
+.soy80vh {
+    height: 80vh;
+}
+
+button[disabled] {
+    background-color: rgba($color: $color-lila, $alpha: 0.4);
+    color: rgba($color: $color-black, $alpha: 0.2);
+}
+

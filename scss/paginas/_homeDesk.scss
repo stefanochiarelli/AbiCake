@@ -47,8 +47,154 @@
     
 }
 
+//Background Wrapper
+
+.bckgWrapper {
+    background-image: url(../../img/bgDesk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
 //Sección 2
 
 .seccionDosDesk {
-    height: 100vh;
+    height: 90vh;
+    margin-top: 12rem;
+
+    &__banners {
+        
+
+        .bannerWrapper {
+            position: relative;
+
+            img{
+                max-width: 80%;
+                
+    
+            }
+        }
+    }
+
+    &__banner1 {
+        margin: 3rem 0 0 2rem;
+        position: absolute;
+        z-index: 2;
+        left: 3rem;
+       
+    }
+    &__banner2 {
+        position: absolute;
+        top: 5rem;
+        left: -2rem;   
+    }
+
+    &__contenido {
+        margin-left: 2rem;
+        border-left: $color-rosa 2px solid;
+    }
+
+    &__texto {
+        margin-left: 2rem;
+        margin-right: 30%;
+        font-size: 1.8rem;
+        font-weight: lighter;
+        
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+//Sección 3
+
+.seccionTresDesk {
+    display: none;
+    height: 80vh;
+
+    &__buttonWrap {
+        display: flex;
+        flex-direction: column;
+        
+
+        button {
+            font-family: 'Assistant', sans-serif;
+            width: 80%;
+            font-size: 2.4rem;
+            margin: .5rem;
+            margin-left: 5rem;
+            padding: .5rem 0;
+            background-color: transparent;
+
+            &:hover {
+                font-weight: bold;
+                cursor: pointer;
+                background-color: $color-rosa;
+            }
+
+            &:focus {
+                background-color: $color-rosa;
+                font-weight: bold;
+            }
+            
+            
+            
+        }
+        .buttonWrap__button1 {
+            padding-right: 7rem;
+            
+        }
+
+        .buttonWrap__button2 {
+            padding-left: 5rem;
+        }
+
+        .buttonWrap__button3 {
+            padding-right: 8rem;
+        }
+    }
+
+    &__mostreoTortas{
+        display: none;
+        p {
+            font-size: 1.6rem;
+            font-weight: lighter;
+            margin-bottom: 10rem;
+        }
+
+        img {
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__mostreoDesayunos {
+        display: none;
+        @extend .seccionTresDesk__mostreoTortas;
+
+        p {
+            margin-bottom: 8rem;
+        }
+        
+        img {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__mostreoCajas {
+        display: none;
+        @extend .seccionTresDesk__mostreoTortas;
+
+        p {
+            margin-bottom: 8rem;
+        }
+        
+        img {
+            width: 100%;
+        }
+    }
 }
