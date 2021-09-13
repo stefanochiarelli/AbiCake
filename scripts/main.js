@@ -36,15 +36,7 @@ wrapper.addEventListener('click', (e) => {
 }
 })
 
-//Jump.js 
 
-
-        
-// const botonTortas = document.querySelector('.seccionUno__boton1')
-
-// botonTortas.addEventListener('click', () => {
-//     jump('.seccionTresDesk')
-// })
 
 
 
