@@ -1448,7 +1448,7 @@ body {
   background-image: url(../../img/01.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 95vh;
 }
 .seccionUno__opciones {
   display: flex;
@@ -1810,9 +1810,6 @@ button[disabled] {
 }
 
 @media (min-width: 1100px) and (max-width: 1600px) {
-  .seccionDosDesk {
-    height: 70vh;
-  }
   .seccionDosDesk__texto {
     font-size: 1.3rem;
     margin-right: 20%;
