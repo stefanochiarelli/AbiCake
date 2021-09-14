@@ -1407,6 +1407,10 @@
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -1416,23 +1420,6 @@ body {
   font-family: "Assistant", sans-serif;
   margin: 0;
   overflow-x: hidden;
-}
-
-.active {
-  display: block;
-}
-
-.titulo {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 31px;
-}
-.titulo--footer {
-  color: #ffffff;
-}
-.titulo--pasos {
-  color: #3D455A;
-  margin-bottom: 41px;
 }
 
 .btn {
@@ -1511,9 +1498,21 @@ body {
   margin: 0 2rem;
 }
 
-.seccionTres .accordion-button:not(.collapsed) {
-  color: #000000 !important;
-  background-color: rgba(118, 120, 158, 0.5) !important;
+.seccionTres__accordion1 .accordion-button:not(.collapsed), .seccionTres__accordion3 .accordion-button:not(.collapsed), .seccionTres__accordion2 .accordion-button:not(.collapsed) {
+  color: #F7A9D4 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.seccionTres__accordion1 .accordion-button::after, .seccionTres__accordion3 .accordion-button::after, .seccionTres__accordion2 .accordion-button::after {
+  width: 5rem;
+  height: 5rem;
+  background-size: 5rem;
+  margin-right: 2rem;
+}
+.seccionTres__accordion1 .accordion-button:not(.collapsed)::after, .seccionTres__accordion3 .accordion-button:not(.collapsed)::after, .seccionTres__accordion2 .accordion-button:not(.collapsed)::after {
+  width: 4rem;
+  height: 4rem;
+  background-size: 4rem;
+  background-image: url("../img/001-down-arrow.png");
 }
 .seccionTres__accordion1 button, .seccionTres__accordion3 button, .seccionTres__accordion2 button {
   background-color: #F7A9D4;
@@ -1544,8 +1543,29 @@ body {
   width: 100%;
   margin-bottom: 23px;
 }
+.seccionTres__accordion2 .accordion-button:not(.collapsed) {
+  color: #CEC4A5 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
 .seccionTres__accordion2 button {
   background-color: #CEC4A5;
+}
+.seccionTres__accordion3 .accordion-button:not(.collapsed) {
+  color: #76789E !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.seccionTres__accordion3 .accordion-button::after {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2.5rem;
+  background-size: 4rem;
+  background-image: url("../img/001-down-arrow.png");
+}
+.seccionTres__accordion3 .accordion-button:not(.collapsed)::after {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-size: 4.5rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 .seccionTres__accordion3 button {
   background-color: #76789E;
@@ -1775,10 +1795,7 @@ button[disabled] {
   padding-left: 5rem;
 }
 .seccionTresDesk__buttonWrap .buttonWrap__button3 {
-  padding-right: 8rem;
-}
-.seccionTresDesk__mostreoTortas, .seccionTresDesk__mostreoCajas, .seccionTresDesk__mostreoDesayunos {
-  display: none;
+  padding-right: 2rem;
 }
 .seccionTresDesk__mostreoTortas p, .seccionTresDesk__mostreoCajas p, .seccionTresDesk__mostreoDesayunos p {
   font-size: 1.6rem;
@@ -1954,6 +1971,35 @@ button[disabled] {
   .solo-desk {
     display: none;
   }
+}
+@media (max-height: 640px) {
+  .seccionUno {
+    height: 100vh;
+  }
+  .seccionUno__logo {
+    margin-top: 10rem;
+  }
+}
+.active {
+  display: block;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.titulo--footer {
+  color: #ffffff;
+}
+.titulo--pasos {
+  color: #3D455A;
+  margin-bottom: 41px;
+}
+
+.mostreoActive {
+  background-color: #F7A9D4 !important;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

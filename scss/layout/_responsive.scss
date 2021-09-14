@@ -170,3 +170,12 @@
       display: none;
     }
   }
+
+  @media (max-height: 640px) {
+    .seccionUno {
+      height: 100vh;
+      &__logo {
+        margin-top: 10rem;
+      }
+    }
+  }

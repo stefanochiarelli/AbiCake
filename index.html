@@ -312,7 +312,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
                                 id="button3">
-                                Cajas
+                                Box Dulces
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
@@ -325,7 +325,7 @@
                                     de una excelente presentación. 
                                 </p>
                                 <div class="acordeon-img">
-                                    <img src="img/Caja.png" alt="caja regalo" />
+                                    <img src="img/boxDulce.jpg" alt="caja regalo" />
                                 </div>
                             </div>
                         </div>
@@ -347,14 +347,14 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12 col-md-6 seccionTresDesk__buttonWrap" data-id="wrapper">
-                                        <button class="btn buttonWrap__button1" data-id="boton1">
+                                        <button class="btn buttonWrap__button1 mostreoActive" data-id="boton1">
                                             Tortas
                                         </button>
                                         <button class="btn buttonWrap__button2" data-id="boton2">
                                             Desayunos Deluxe
                                         </button>
                                         <button class="btn buttonWrap__button3" data-id="boton3">
-                                            Cajas
+                                            Box Dulces
                                         </button>
                                     </div>
                                     <div class="col-12 col-md-6 ">
@@ -381,7 +381,7 @@
                                         <div class="seccionTresDesk__mostreoCajas">
                                             <p>Están pensados para ser una alternativa a una ocasión especial ofreciendo nuestras frescas y deliciosas frutillas cubiertas de chocolate y los brigadeiros de chocolate acompañados de una excelente presentación. </p>
 
-                                            <img src="./img/Caja.png" alt="caja con mensaje de feliz dia">
+                                            <img src="./img/boxDulce.jpg" alt="caja con mensaje de feliz dia">
                                         </div>
                                     </div>
                                     
@@ -411,16 +411,16 @@
                             </div>
                             <div class="pedidos__pasos pedidos__pasos--margen">
                                 <img class="pedidos__img" src="img/PAGO.svg" alt="pago" />
-                                <p class="pedidos__texto">Se ejecuta el pago del encargo.</p>
+                                <p class="pedidos__texto">Pago del encargo vía transferencia bancaria.</p>
                             </div>
                             <div class="pedidos__pasos">
                                 <img class="pedidos__img" src="img/PREPARACION.svg" alt="preparacion" />
-                                <p class="pedidos__texto">La preparación es de entre X-Y días.</p>
+                                <p class="pedidos__texto">La preparación es de mínimo 48hs, varia dependiendo el producto.</p>
                             </div>
                             <div class="pedidos__pasos pedidos__pasos--margen">
                                 <img class="pedidos__img" src="img/DELIVERY.svg" alt="delivery" />
                                 <p class="pedidos__texto">
-                                    Se puede retirar en nuestro domicilio o se pueden hacer envíos.
+                                    Envíos con cargo o retiro por nuestro domicilio. 
                                 </p>
                             </div>
                         </div>
@@ -502,12 +502,12 @@
                     offset: -100
                 })
 
-            } else if (e.target.innerHTML === 'Cajas' && innerWidth > 1100) {
+            } else if (e.target.innerHTML === 'Box Dulces' && innerWidth > 1100) {
                 jump('.seccionTresDesk', {
                     offset: -100
                 })
 
-            } else if (e.target.innerHTML === 'Cajas' && innerWidth < 1100) {
+            } else if (e.target.innerHTML === 'Box Dulces' && innerWidth < 1100) {
                 jump('.seccionTres', {
                     offset: -100
                 })

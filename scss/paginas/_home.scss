@@ -106,17 +106,35 @@
 
 .seccionTres {
    
-    .accordion-button {
-        &:not(.collapsed){
-            color: $color-black !important;
-            background-color: rgba($color: $color-lila , $alpha: 0.5) !important; 
-        }
-    }
+    
     
 
 
     &__accordion1 {
         
+        .accordion-button {
+            &:not(.collapsed){
+                color: $color-rosa !important;
+                background-color: rgba($color: $color-black , $alpha: 0.8) !important; 
+            }
+
+            &::after {
+                width: 5rem;
+                height: 5rem;
+                background-size: 5rem;
+                margin-right: 2rem;
+            }
+
+            &:not(.collapsed)::after {
+                width: 4rem;
+                height: 4rem;
+                background-size: 4rem;
+                background-image: url("../img/001-down-arrow.png");
+                
+            }
+    
+            
+        }
         
 
         button {
@@ -157,6 +175,14 @@
 
     &__accordion2 {
         @extend .seccionTres__accordion1;
+
+        .accordion-button {
+            &:not(.collapsed){
+                color: $color-beige !important;
+                background-color: rgba($color: $color-black , $alpha: 0.8) !important; 
+            }
+        }
+
         button {
             background-color: $color-beige;
         }
@@ -164,6 +190,31 @@
 
     &__accordion3 {
         @extend .seccionTres__accordion1;
+
+        .accordion-button {
+            &:not(.collapsed){
+                color: $color-lila !important;
+                background-color: rgba($color: $color-blanco , $alpha: 0.4) !important; 
+            }
+
+            &::after {
+                width: 4rem;
+                height: 4rem;
+                margin-right: 2.5rem;
+                background-size: 4rem;
+                background-image: url("../img/001-down-arrow.png");
+            }
+
+            &:not(.collapsed)::after {
+                width: 4.5rem;
+                height: 4.5rem;
+                background-size: 4.5rem;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                
+            }
+        }
+
+
         button {
             background-color: $color-lila;
             color: $color-blanco;
