@@ -113,9 +113,10 @@
     &__accordion1 {
         
         .accordion-button {
+            height: 7rem !important;
             &:not(.collapsed){
-                color: $color-rosa !important;
-                background-color: rgba($color: $color-black , $alpha: 0.8) !important; 
+                
+                background-color: rgba($color: $color-rosa, $alpha: 0.8) !important; 
             }
 
             &::after {
@@ -177,9 +178,10 @@
         @extend .seccionTres__accordion1;
 
         .accordion-button {
+            height: 7rem !important;
             &:not(.collapsed){
-                color: $color-beige !important;
-                background-color: rgba($color: $color-black , $alpha: 0.8) !important; 
+                
+                background-color: rgba($color: $color-beige , $alpha: 0.8) !important; 
             }
         }
 
@@ -190,11 +192,13 @@
 
     &__accordion3 {
         @extend .seccionTres__accordion1;
+        
 
         .accordion-button {
+            height: 7rem !important;
             &:not(.collapsed){
-                color: $color-lila !important;
-                background-color: rgba($color: $color-blanco , $alpha: 0.4) !important; 
+                
+                background-color: rgba($color: $color-lila , $alpha: 0.8) !important; 
             }
 
             &::after {

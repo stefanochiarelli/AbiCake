@@ -1498,9 +1498,11 @@ body {
   margin: 0 2rem;
 }
 
+.seccionTres__accordion1 .accordion-button, .seccionTres__accordion3 .accordion-button, .seccionTres__accordion2 .accordion-button {
+  height: 7rem !important;
+}
 .seccionTres__accordion1 .accordion-button:not(.collapsed), .seccionTres__accordion3 .accordion-button:not(.collapsed), .seccionTres__accordion2 .accordion-button:not(.collapsed) {
-  color: #F7A9D4 !important;
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(247, 169, 212, 0.8) !important;
 }
 .seccionTres__accordion1 .accordion-button::after, .seccionTres__accordion3 .accordion-button::after, .seccionTres__accordion2 .accordion-button::after {
   width: 5rem;
@@ -1543,16 +1545,20 @@ body {
   width: 100%;
   margin-bottom: 23px;
 }
+.seccionTres__accordion2 .accordion-button {
+  height: 7rem !important;
+}
 .seccionTres__accordion2 .accordion-button:not(.collapsed) {
-  color: #CEC4A5 !important;
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(206, 196, 165, 0.8) !important;
 }
 .seccionTres__accordion2 button {
   background-color: #CEC4A5;
 }
+.seccionTres__accordion3 .accordion-button {
+  height: 7rem !important;
+}
 .seccionTres__accordion3 .accordion-button:not(.collapsed) {
-  color: #76789E !important;
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(118, 120, 158, 0.8) !important;
 }
 .seccionTres__accordion3 .accordion-button::after {
   width: 4rem;
@@ -1686,6 +1692,7 @@ button[disabled] {
 }
 .abiHeader__redes svg {
   margin-right: 0.8rem;
+  cursor: pointer;
 }
 
 .navbarDesk {
